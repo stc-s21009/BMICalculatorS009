@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">BMI計算機</string>
+
+    <string name="tv_age">年齢</string>
+    <string name="tv_height">身長</string>
+    <string name="tv_weight">体重</string>
+    <string name="unit_of_age">歳</string>
+    <string name="unit_of_height">cm</string>
+    <string name="unit_of_weight">kg</string>
+    <string name="bt_calculate">計算</string>
+    <string name="bt_clear">クリア</string>
+
+    <string name="tv_DoO">あなたの肥満度は</string>
+    <string name="tv_AW">あなたの適正体重は</string>
+
+    <string name="dialog_title">警告</string>
+    <string name="dialog_msg">適切な肥満度を求めるためには、6歳未満の場合はカウプ指数が、6歳から15際まではローレル指数が使われます。</string>
+    <string name="dialog_btn_ok">確認</string>
+
+    <string name="Bmi1">肥満(4度)</string>
+    <string name="Bmi2">肥満(3度)</string>
+    <string name="Bmi3">肥満(2度)</string>
+    <string name="Bmi4">肥満(1度)</string>
+    <string name="Bmi5">普通体重</string>
+    <string name="Bmi6">低体重(瘦せ型)</string>
+
+    <string name="Rohrer1">肥満(ローレル指数)</string>
+    <string name="Rohrer2">肥満ぎみ(ローレル指数)</string>
+    <string name="Rohrer3">正常(ローレル指数)</string>
+    <string name="Rohrer4">やせぎみ(ローレル指数)</string>
+    <string name="Rohrer5">やせ(ローレル指数)</string>
+
+    <string name="Kaup1">肥満(カウプ指数)</string>
+    <string name="Kaup2">肥満ぎみ(カウプ指数)</string>
+    <string name="Kaup3">正常(カウプ指数)</string>
+    <string name="Kaup4">やせぎみ(カウプ指数)</string>
+    <string name="Kaup5">やせ(カウプ指数)</string>
+
+
+
+
+</resources>
