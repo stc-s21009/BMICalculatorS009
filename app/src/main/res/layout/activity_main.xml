@@ -51,20 +51,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="75dp"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/tvunit4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvAW" />
 
     <TextView
         android:id="@+id/tvunit4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:textIsSelectable="false"
         android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tvoutfloat"
-        app:layout_constraintEnd_toEndOf="@+id/tvAW" />
+        app:layout_constraintStart_toEndOf="@+id/tvoutfloat" />
 
     <TextView
         android:id="@+id/tvunit1"

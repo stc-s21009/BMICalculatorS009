@@ -10,6 +10,8 @@
     <string name="bt_calculate">計算</string>
     <string name="bt_clear">クリア</string>
 
+    <string name="keikoku">警告:未入力の欄があります</string>
+
     <string name="tv_DoO">あなたの肥満度は</string>
     <string name="tv_AW">あなたの適正体重は</string>
 

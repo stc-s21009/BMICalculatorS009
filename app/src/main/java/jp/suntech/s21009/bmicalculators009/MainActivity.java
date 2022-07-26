@@ -3,6 +3,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,9 +37,16 @@ public class MainActivity extends AppCompatActivity {
             EditText input_weight = findViewById(R.id.etWeight);
             OrderConfirmDialogFragment dialogFragment = new OrderConfirmDialogFragment();
 
-            int age = Integer.parseInt(input_age.getText().toString());
-            float height = Float.parseFloat(input_height.getText().toString());
-            float weight = Float.parseFloat(input_weight.getText().toString());
+            String age_str = input_age.getText().toString();
+            String height_str = input_height.getText().toString();
+            String weight_str = input_weight.getText().toString();
+
+            int age = 0;
+            float height = 0;
+            float weight = 0;
+
+
+
 //
             //画面上部の出力制御用
             TextView DegreeOfObesity = findViewById(R.id.tvDoO);
@@ -51,6 +59,15 @@ public class MainActivity extends AppCompatActivity {
             int id = view.getId();
             switch(id){
                 case R.id.btcalculate:
+                    if(TextUtils.isEmpty(age_str)||TextUtils.isEmpty(height_str)||TextUtils.isEmpty(weight_str)){
+                        Toast.makeText(MainActivity.this,R.string.keikoku,Toast.LENGTH_LONG).show();
+                        break;
+                    }
+                    else{
+                        age = Integer.parseInt(age_str);
+                        height = Float.parseFloat(height_str);
+                        weight = Float.parseFloat(weight_str);
+                    }
                     DegreeOfObesity.setText(getString(R.string.tv_DoO));
                     AppropriateWeight.setText(getString(R.string.tv_AW));
                     Unit.setText(getString(R.string.unit_of_weight));
